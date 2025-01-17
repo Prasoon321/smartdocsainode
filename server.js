@@ -14,13 +14,8 @@ const connectmongoosedb = require("./db/mongoconnection");
 
 // Routes
 const pdfuplaod = require('./route/uplaod');
-const session = require('express-session');
 
-app.use(session({
-    secret: 'your_secret_key', // replace with a secure key
-    resave: false,
-    saveUninitialized: true
-}));
+
 // Middleware
 app.use(cors());
 
